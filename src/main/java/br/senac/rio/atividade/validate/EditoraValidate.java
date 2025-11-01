@@ -21,7 +21,7 @@ public class EditoraValidate {
      * @throws AtributeNotValidException if the telefone is null or does not have 9 digits
      */
     public static void validateTelefone(String telefone) {
-        if (telefone == null || !telefone.matches("\\d{9}")) {
+        if (telefone == null || !telefone.matches("\\d{9}\s*")) {
             throw new AtributeNotValidException("Telefone da editora deve ter 9 dígitos.");
         }
     }
