@@ -1,12 +1,16 @@
-package com.senac.rio.atividade.model;
+package br.senac.rio.atividade.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Table(name = "editoras")
-public class Editoras {
+public class Editora {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,10 +29,10 @@ public class Editoras {
     @Setter
     private String telefone;
 
-    public Editoras() {
+    public Editora() {
     }
 
-    public Editoras(String nome, String endereco, String telefone) {
+    public Editora(String nome, String endereco, String telefone) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;

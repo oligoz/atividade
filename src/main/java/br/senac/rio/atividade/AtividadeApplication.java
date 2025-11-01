@@ -1,4 +1,4 @@
-package com.senac.rio.atividade;
+package br.senac.rio.atividade;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
