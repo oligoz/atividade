@@ -92,6 +92,6 @@ public class EditorasService {
      */
     public void deleteEditora(Long id) {
         getEditoraById(id);
-        this.editorasRepository.deleteById(id);
+        editorasRepository.deleteById(id);
     }
 }

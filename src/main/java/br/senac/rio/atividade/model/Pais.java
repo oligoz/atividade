@@ -1,5 +1,6 @@
 package br.senac.rio.atividade.model;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,10 +16,12 @@ public class Pais {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter
+    @JsonView(View.Full.class)
     private Long codigo;
 
     @Getter
     @Setter
+    @JsonView(View.Full.class)
     private String descricao;
 
     public Pais() {
